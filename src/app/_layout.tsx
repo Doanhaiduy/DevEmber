@@ -2,16 +2,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Stack } from 'expo-router';
 
-export default function DayDetailsScreen() {
+export default function RootLayout() {
     return (
-        <View>
+        <Stack screenOptions={{}}>
             <Stack.Screen
+                name='index'
                 options={{
-                    title: 'Day 1',
+                    title: 'DEVember',
                 }}
             />
-            <Text>Day Details Screen</Text>
-        </View>
+        </Stack>
     );
 }
 
