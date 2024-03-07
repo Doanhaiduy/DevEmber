@@ -11,21 +11,6 @@ SplashScreen.preventAutoHideAsync();
 const days = [...Array(24)].map((val, i) => i + 1);
 
 export default function HomeScreen() {
-    const [fontsLoaded, fontError] = useFonts({
-        Inter: Inter_900Black,
-        Amatic: AmaticSC_400Regular,
-        AmaticBold: AmaticSC_700Bold,
-    });
-
-    useEffect(() => {
-        if (fontsLoaded || fontError) {
-            SplashScreen.hideAsync();
-        }
-    }, [fontsLoaded, fontError]);
-
-    if (!fontsLoaded && !fontError) {
-        return null;
-    }
     return (
         <View style={styles.container}>
             <FlatList

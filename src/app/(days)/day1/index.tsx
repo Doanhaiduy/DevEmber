@@ -10,9 +10,14 @@ export default function DayDetailsScreen() {
                     title: 'Day 1',
                 }}
             />
-            <Text>Day Details Screen</Text>
+            <Text style={styles.text}>Day Details Screen</Text>
         </View>
     );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    text: {
+        fontFamily: 'AmaticBold',
+        fontSize: 50,
+    },
+});
