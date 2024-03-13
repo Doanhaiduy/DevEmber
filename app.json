@@ -1,7 +1,7 @@
 {
     "expo": {
-        "name": "DEVember-test",
-        "slug": "DEVember-test",
+        "name": "DEVember",
+        "slug": "DEVember",
         "scheme": "devember",
         "version": "1.0.0",
         "orientation": "portrait",
@@ -26,6 +26,9 @@
             "favicon": "./assets/favicon.png",
             "bundler": "metro"
         },
-        "plugins": ["expo-font", "expo-router"]
+        "plugins": ["expo-font", "expo-router"],
+        "experiments": {
+            "tsconfigPaths": true
+        }
     }
 }
