@@ -5,16 +5,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 import { Directions, Gesture, GestureDetector } from 'react-native-gesture-handler';
 
-import Animated, {
-    FadeIn,
-    FadeOut,
-    BounceInRight,
-    BounceInLeft,
-    SlideInLeft,
-    SlideOutRight,
-    SlideInRight,
-    SlideOutLeft,
-} from 'react-native-reanimated';
+import Animated, { FadeIn, FadeOut, SlideInRight, SlideOutLeft } from 'react-native-reanimated';
 
 const onboardingSteps = [
     {
